@@ -66,5 +66,5 @@ COPY --from=build /cross /cross
 ENV PATH=/cross/bin:${PATH}
 
 USER pi
-COPY --chown=pi:pi toolchain.cmake /home/pi/
+COPY toolchain.cmake /cross/cmake/
 WORKDIR /home/pi/
