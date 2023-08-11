@@ -13,7 +13,7 @@ Set the versions with docker environment variables `BINUTILS_VERSION` and `GCC_V
 
 Build the docker image
 ```
-docker build -t raspi_cross_gcc .
+docker build -t nyacpp/raspi_cross_gcc .
 ```
 
 The build time depends on your PC, but should be around 15 minutes.
@@ -37,7 +37,7 @@ docker run -it --name test \
  -v $PWD/test:/home/pi/test \
  -v ~/raspi:/raspi \
  -v ~/raspi/usr/lib/gcc:/cross/lib/gcc \
- raspi_cross_gcc \
+ nyacpp/raspi_cross_gcc \
  make -C test
 ```
 
