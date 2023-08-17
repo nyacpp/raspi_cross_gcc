@@ -33,7 +33,7 @@ It takes around half an hour for clean system.
 
 Build test application in the docker:
 ```
-docker run -it --name test \
+docker run -it --rm \
  -v $PWD/test:/home/pi/test \
  -v ~/raspi:/raspi \
  -v ~/raspi/usr/lib/gcc:/cross/lib/gcc \
